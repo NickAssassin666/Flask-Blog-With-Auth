@@ -74,7 +74,7 @@ class CommentPost(db.Model):
     comment_author = relationship("User", back_populates="comments")
 
 
-db.create_all()
+# db.create_all()
 
 
 def admin_only(f):
